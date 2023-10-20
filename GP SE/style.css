@@ -1,0 +1,16 @@
+body {
+  background-color: #181818;
+  color: #ffffff;
+}
+
+.scroll {
+  width: 750px;
+  height: 1000px;
+  overflow: auto;
+  background: #C8C8C8;
+  color: black;
+  font-family: Georgia;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 20px;
+}
