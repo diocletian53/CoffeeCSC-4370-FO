@@ -4,8 +4,6 @@
     <title>Job Application Form</title>
     
      <style>
-	 
-
         body {
             font-family: Arial, sans-serif;
         }
@@ -43,52 +41,56 @@
 
         h2 {
             margin-top: 15px;
-        }
-
-   
-      
+        }      
     </style>
-
 </head>
 <body>
     <h1>Company Information</h1>
-    <form action="submit_application.php" method="post">
+    <form action="FormData.php" method="post">
         <div>
             <label for="position">Company Name:</label>
             <input type="text" id="position" name="position" autofocus required>
         </div>
 
         <div>
-            <label for="Company ID: ">Company ID::</label>
-            <input type="text" id="name" name="Company ID:" required>
+            <label for="CompanyID">Company ID:</label>
+            <input type="text" id="CompanyID" name="CompanyID" required>
         </div>
 
-   
         <div>
-            <label for="address:">Address:</label>
+            <label for="address">Address:</label>
             <textarea id="address" name="address"></textarea>
         </div>
-     <div>
-	 
-            <label for="phone">City:</label>
-            <input type="tel" id="phone" name="phone" required>
+
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
         </div>
 
         <div>
-            <label for="phone">Zipcode:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <label for="zipcode">Zipcode:</label>
+            <input type="text" id="zipcode" name="zipcode" required>
         </div>
 
         <div>
-            <label for="email">Phone(optional):</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-		<p> Do you have more than one location?</p>
-		 <div>
-		<br/>
-           <button type="button" onclick="alert('Hello world!')">Add More!</button>
-
+            <label for="tel">Phone (optional):</label>
+            <input type="tel" id="tel" name="tel">
         </div>
 
+        <div>
+            <label for="email">Email (optional):</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <p>Do you have more than one location?</p>
+        <div>
+            <input type="checkbox" id="multiple_locations" name="multiple_locations" value="yes">
+            <label for="multiple_locations">Yes</label>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
 </body>
 </html>
